@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.yesm1ke.tray",
+  "name": "System tray (group)",
+  "version": "1.0.0",
+  "author": "yesm1ke",
+  "license": "MIT",
+  "description": "The stock omarchy.tray, unchanged, plus a chevron while the tray is empty so widgets that hide with the tray drawer can still be revealed.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Tray.qml"
+  },
+  "barWidget": {
+    "displayName": "System tray (group)",
+    "description": "Status notifier items; keeps its chevron while empty if tray-following widgets sit next to it",
+    "category": "Status",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
