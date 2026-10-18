@@ -1,5 +1,7 @@
 # System tray for the Omarchy bar, with a group chevron
 
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-support-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/mike_g)
+
 The stock Omarchy system tray, unchanged, except for one thing: while no
 application has a tray icon, it still shows its `‹` chevron if widgets that
 hide with the tray drawer sit next to it. Hover the chevron and those widgets
