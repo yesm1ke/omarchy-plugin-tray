@@ -18,5 +18,8 @@
     "category": "Status",
     "allowMultiple": false,
     "defaultSection": "right"
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.tray"
   }
 }
