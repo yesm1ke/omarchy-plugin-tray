@@ -62,12 +62,22 @@ Omarchy's files and ours apart:
   commit per Omarchy version that changed them;
 - branch `main` is `upstream` plus the change described above (`Tray.qml`, marked `io.github.yesm1ke`, before the root's size).
 
-After an Omarchy update, run `./sync-upstream` in the installed plugin
-(`~/.config/omarchy/plugins/<id>/`). It records the installed stock files on
+To stay current, update the plugin as usual:
+
+```sh
+omarchy plugin update
+```
+
+Omarchy's changes to the stock widget reach you that way: they are merged
+here and published after each Omarchy release that changes it. The copy
+follows the latest Omarchy release; on an older Omarchy, update Omarchy
+first if the widget fails to load. Don't run
+`./sync-upstream` in an installed copy: it commits locally, and after that
+`omarchy plugin update` can no longer fast-forward. It is the maintainer's
+tool (or yours, in a fork): it records the installed stock files on
 `upstream` and merges them into `main`; on a conflict it aborts the merge and
-leaves everything as it was, to be resolved with `git merge upstream`.
-`./sync-upstream --check` only reports whether anything changed. It can be run
-automatically from an Omarchy `post-update` hook.
+leaves everything as it was, to be resolved with `git merge upstream`;
+`./sync-upstream --check` only reports whether anything changed.
 
 ## How it works
 
